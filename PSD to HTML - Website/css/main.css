@@ -1,0 +1,492 @@
+* {
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+header {
+    background : linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("../images/header.jpg");
+    height: 700px;
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo {
+    color : #ffffff;
+    font-family: 'Yesteryear', cursive;
+    font-size: 42px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+
+.nav-menu {
+    list-style: none;
+    color: #ffffff;
+}
+
+.nav-menu li {
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+.nav-menu li a {
+    text-decoration : none;
+    color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-menu li a:hover{
+    color :#F2AC32;
+}
+
+.header-title-1 {
+    color : #F2AC32;
+    font-size: 44px;
+    font-family: 'Rochester', cursive;
+    margin-top: 150px;
+    margin-bottom: 15px;
+}
+
+.header-title-2 {
+    color : #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 55px;
+    letter-spacing: 6px;
+    margin-bottom: 30px;
+}
+
+.header-action-button {
+    color: white;
+    text-decoration: none;
+    background-color: #F2AC32;
+    padding: 10px 20px;
+    font-size : 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-action-button:hover{
+    background-color: #855d19;
+}
+
+.search{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.my-bag {
+    font-size: 30px;
+}
+
+/************** Discover Section ******************/
+
+.discover-section{
+    background-color: rgb(231, 227, 227);
+    display: flex;
+    justify-content: center;
+    padding : 100px;
+}
+
+.food-items{
+    height: 450px;
+    width : 270px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.food-items p{
+    color: rgb(85, 84, 84);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.food-items a{
+    color:  #F2AC32;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.food-1{
+    background-image: url("../images/burger.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-top: -40px;
+    -webkit-box-shadow: 1px 4px 22px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 4px 22px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 4px 22px 0px rgba(0,0,0,0.75);
+    background-position: center;
+}
+
+.food-2{
+    background-image: url("../images/eggtoast.jpg");
+    background-size: cover;
+    background-position: center;
+    -webkit-box-shadow: 1px 4px 22px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 4px 22px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 4px 22px 0px rgba(0,0,0,0.75);
+    background-position: center;
+}
+
+.discover-h1{
+    font-family: 'Rochester', cursive;
+    color : #F2AC32;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.discover-h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.food-border{
+    border: 2px solid #F2AC32;
+    position: relative;
+}
+
+.food-overlay{
+    padding: 100px 10px 0 10px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+/************** Specialities Section ******************/
+
+.specialities-section{
+    background : linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("../images/specialities.jpg");
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.specialities-h1{
+    font-family: 'Rochester', cursive;
+    color : #F2AC32;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 40px;
+}
+
+.specialities-h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    letter-spacing: 3px;
+    margin-bottom: 100px;
+    color: white;
+}
+
+.specialities-rows{
+    display: flex;
+    justify-content: center;
+}
+
+.specialities-image-1,
+.specialities-image-2,
+.specialities-image-3{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.specialities-col{
+    width: 350px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.specialities-image-1{
+    background : url("../images/breakfast.jpg");
+    background-size: cover;
+}
+
+.specialities-image-1:hover .specialities-overlay{
+    opacity: 1;
+}
+
+.specialities-image-2{
+    background : url("../images/lunch.jpg");
+    background-size: cover;
+}
+
+.specialities-image-2:hover .specialities-overlay{
+    opacity: 1;
+}
+
+.specialities-image-3{
+    background : url("../images/dinner.jpg");
+    background-size: cover;
+}
+
+.specialities-image-3:hover .specialities-overlay{
+    opacity: 1;
+}
+
+.specialities-h3{
+    font-size: 25px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 80px;
+}
+
+.specialities-overlay{
+    opacity: 0;
+    position: absolute;
+    background-color : rgb(242, 172, 50, 0.7);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.specialities-overlay-border{
+    border: 2px solid white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+.speciality-middle{
+    text-align: center;
+    position: relative;
+}
+
+.speciality-middle:before{
+    content: '';
+    position: absolute;
+    border-top: 100px solid rgb(231, 227, 227);
+    border-right : 100vw solid transparent;
+    top:-120px;
+    left:0;
+}
+
+.speciality-middle:after{
+    content: '';
+    position: absolute;
+    border-bottom: 100px solid rgb(231, 227, 227);
+    border-left : 100vw solid transparent;
+    bottom:-100px;
+    right:0;
+}
+
+/************** Special Menu Section ******************/
+
+.special-menu-secion{
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(231, 227, 227);
+}
+
+.special-menu-container{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.special-menu-col{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.special-menu-h1{
+    font-family: 'Rochester', cursive;
+    color : #F2AC32;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+.special-menu-h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+    color: black;
+}
+
+.special-menu-h3{
+    width: 100%;
+    font-family: 'Rochester', cursive;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.seperator,
+.seperator-orange{
+    display: inline-block;
+    width: 40px;
+    border-bottom : 2px solid white;
+    margin : 15px auto;
+}
+
+.special-menu-h4{
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+}
+
+.special-menu-p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    padding : 30px 20px;
+    width: 100%;
+}
+
+.col-large{
+    width: 50%;
+    height: 450px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.col-large-1{
+    background-color : #F2AC32;
+    color: white;
+    justify-content: center;
+}
+
+.fa-ice-cream{
+    width: 100%;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.col-large-2{
+   background-image: url("../images/icecream.jpg");
+   background-size: cover;
+   background-position: center;
+}
+
+.fa-utensils{
+    width: 100%;
+    font-size: 50px;
+    margin-bottom: 10px; 
+}
+
+.col-large-3{
+    background-color : #F2AC32;
+    color: white;
+    justify-content: center;
+}
+
+.col-large-4{
+    background-image: url("../images/pizza.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.col-small{
+    width: 50%;
+    height: 225px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.col-small-1,
+.col-small-4{
+    background-color: white;
+}
+
+.fa-hamburger,
+.fa-pizza-slice{
+    width: 100%;
+    font-size: 50px;
+    margin-bottom: 10px;
+    color : #F2AC32;
+}
+
+.col-small-h3{
+    width: 100%;
+    font-family: 'Rochester', cursive;
+    font-size: 22px;
+    letter-spacing: 2px;
+    color : #F2AC32;
+}
+
+.seperator-orange{
+    border-bottom : 2px solid #F2AC32;
+}
+
+.col-small-h4,
+.col-small-h5{
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+    color : black;
+}
+
+.col-small-h5{
+    color : #F2AC32;
+}
+
+.col-small-2{
+    background-image: url("../images/salmon.jpg");
+    background-size: cover;
+    background-position: center;
+ }
+
+.col-small-3{
+    background-image: url("../images/pizza-slice.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+ /************** Our Menu Section ******************/
+
+.our-menu-section{
+    text-align: center;
+    padding: 50px;
+    background-image: url("../images/pancake.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.our-menu-h1{
+    font-family: 'Rochester', cursive;
+    color : #F2AC32;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+.our-menu-h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+    color: white;
+}
